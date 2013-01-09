@@ -13,6 +13,7 @@ server.configure(function(){
 
 server.listen(port, function() {
 	console.log(port);
+	console.log('test');
 	// console.log('%s listening at %s', server.name, server.url);
 	// console.log('net.Server.address() === ' + require('util').inspect(server.server.address()));
 });
