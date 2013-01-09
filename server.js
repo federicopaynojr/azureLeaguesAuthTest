@@ -37,7 +37,7 @@ application.get('/auth/twitter/callback',
 	passport.authenticate('twitter',
 		{ successRedirect: '/',
 		  failureRedirect: '/auth/twitter' }));
-pasport.serializeUser(function(user, done) {
+passport.serializeUser(function(user, done) {
 	done(null, user.id);
 });
 
