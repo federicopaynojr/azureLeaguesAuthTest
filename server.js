@@ -7,7 +7,7 @@ var users = [];
 
 passport.use(new TwitterStrategy({
 		consumerKey: 'twitter-app-consumer-key',
-		cnsumerSecret: 'twitter-app-consumer-secret',
+		consumerSecret: 'twitter-app-consumer-secret',
 		callbackURL: 'http://test.passport-twitter.com:3000/auth/twitter/callback'
 	},
 	function(token, tokenSecret, profile, done) {
